@@ -2,9 +2,16 @@ import { Button } from './components/Button'
 function App() {
   return (
     <div>
-    <Button  nome="Red" color="red"/>
-    <Button  nome="Bblue" color="blue"/>
-    <Button  nome="Yellow" color="yellow"/>
+ 
+ <Button  color="red" >
+    Botão Vermelho
+    </Button>
+    <Button  color="blue" >
+    Botão Azul
+    </Button>
+    <Button  color="yellow" >
+    Botão Amarelho
+    </Button>
     
     </div>
   );

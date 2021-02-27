@@ -1,0 +1,28 @@
+.experienceBar{
+    display:flex;  /* lado a lado */
+    align-items: center;
+
+}
+.experienceBar span{
+    font-size:  1rem; /* 16px desktop*/
+}
+
+.experienceBar > div {
+    flex: 1; /* tela inteira horizontal */
+    height: 4px;
+    border-radius: 4px;
+    background: var(--gray-line);
+    margin: 0 1.5rem; /* 20px desktop*/
+    position: relative;
+}
+
+.experienceBar > div > div {
+    height: 4px;
+    border-radius: 4px;
+    background: var(--gren);
+}
+.experienceBar > div > span.currentExperience{
+    position: absolute; /*funciona junto com left*/
+    top:12px;
+    transform: translateX(-50%); /*paga o tamnho e descola no eixo X -50%*/
+}

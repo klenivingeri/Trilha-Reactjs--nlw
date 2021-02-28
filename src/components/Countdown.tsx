@@ -1,9 +1,12 @@
 
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useContext } from 'react'
+import { ChallengesContext } from '../contexts/ChallengesContext'
 import styles from '../styles/components/Countdown.module.css'
 
 let countdownTimeout: NodeJS.Timeout; /** Deve assinar com a setTimeout() para acessar clearTimeout(assinatura) o */
+
 export function Countdown(){
+    const { startNewChallenge } = useContext(ChallengesContext)
 
     const [time, setTime] = useState(0.1 * 60);
     const [isActive, setIsActive] = useState(false);
@@ -33,6 +36,7 @@ export function Countdown(){
         }else if(isActive && time === 0){
            setHasFinished(true)
            setIsActive(false)
+           startNewChallenge();
         }
     }, [isActive, time])     //useEffect( Arrow function, [Array de dependencia]), quando o valor dentro da variavel alterar vai disparar uma ação
     /*

@@ -51,12 +51,66 @@
    font-size: 1.25rem;
    padding: 0 2rem 1.5rem;
    border-bottom: 1px solid var(--gray-line);
-   }
-
-.challengesActive main{
-    background: blue;
-    flex:1;
 }
+
+.challengesActive main{ /* essa Configuração deixa tudo centralizado*/
+    flex:1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.challengesActive main strong{
+    font-size: 2rem;
+    font-weight: 600;
+    color:var(title);
+    margin: 1.5rem 0 1rem;
+}
+
+.challengesActive main p{
+    line-height: 1.5;
+}
+
+.challengesActive footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.challengesActive footer button{ /* essa Configuração deixa tudo centralizado*/
+    height: 3rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 0;
+    border-radius: 5px;
+
+    color: var(--white);
+
+    font-size: 1rem;
+    font-weight: 600;
+
+    transition: filter 0.2s;
+}
+
+.challengesActive footer button.challendeFailedButton{ /* essa Configuração deixa tudo centralizado*/
+    background: var(--red);
+
+}
+
+.challengesActive footer button.challengeSucceededButton{ /* essa Configuração deixa tudo centralizado*/
+    background: var(--green);
+
+}
+
+.challengesActive footer button:hover{
+    filter: brightness(0.9); /*0 a 0.9 preto, 1 pra cima branco 10*/
+}
+
+
 
 .challendeFailedButton{
 

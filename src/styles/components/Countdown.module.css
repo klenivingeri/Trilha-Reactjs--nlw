@@ -66,10 +66,27 @@ margin: 0, 0.5rem;
 }
 
 
-.coundownButton:hover{
+.coundownButton:not(:disabled)hover{ /*Quando o botão não estiver desativado,faça isso*/
 
     background: var(--blue-dark);
   
 
 }
+
+.coundownButtonActive{
+    background: var(--white);
+    color: var(--title);
+}
+
+.coundownButtonActive:hover{
+    background: var(--red);
+    color:var(--white);
+}
+.coundownButton:disabled{ /*Quando o botão estiver desativado, faça isso*/
+
+    background:var(--white);
+    color: var(--text);
+    cursor: not-allowed; /*bloqueia a seta*/
+}
+
 /**/

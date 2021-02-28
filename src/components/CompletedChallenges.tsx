@@ -1,6 +1,6 @@
 import styles from '../styles/components/CompletedChallenges.module.css'
 
-export function CompletedChanllenges(){
+export function CompletedChallenges(){
 
 return(
     <div className={styles.completedChallengesComponents}>

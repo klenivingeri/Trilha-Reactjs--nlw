@@ -8,10 +8,12 @@
     flex-direction: column;
 }
 
-.container section{
+.container  section{
 flex:1;
+
 display: grid;
 grid-template-columns: 1fr 1fr; /* duas colunas com o tamanho por igual*/
 gap: 6.25rem ; /* Equivale a 100px no desktop*/
 align-content: center; /* faz todo o conteudo do grid ficar no centro*/
+padding: 6.5rem 2rem;
 }

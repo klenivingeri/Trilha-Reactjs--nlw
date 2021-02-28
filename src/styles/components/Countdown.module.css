@@ -46,4 +46,30 @@ margin: 0, 0.5rem;
 
 }
 
+.coundownButton{
+    width:100%;  /*oculpa todo espaço da div na horizontal*/
+    height: 5rem;  /* altura*/
+
+    margin-top:2rem;
+
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    border: 0;
+    border-radius: 5px;
+    background: var(--blue);
+    color: var(--white);
+
+    font-size: 1.25rem;
+    font-weight: 600;
+    transition: background-color 0.2s;
+}
+
+
+.coundownButton:hover{
+
+    background: var(--blue-dark);
+  
+
+}
 /**/

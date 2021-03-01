@@ -19,7 +19,8 @@
 .experienceBar > div > div {
     height: 4px;
     border-radius: 4px;
-    background: var(--gren);
+    background: var(--green);
+    
 }
 .experienceBar > div > span.currentExperience{
     position: absolute; /*funciona junto com left*/

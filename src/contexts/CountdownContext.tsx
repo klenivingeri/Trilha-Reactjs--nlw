@@ -12,7 +12,9 @@ interface CountdownContexData{
 
 interface CountdownProviderProps{ 
     children: ReactNode;
+
 }
+
 
 export const CountdownContext = createContext({} as CountdownContexData )
 let countdownTimeout: NodeJS.Timeout; /** Deve assinar com a setTimeout() para acessar clearTimeout(assinatura) o */
